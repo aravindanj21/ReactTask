@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductManagement from "./pages/ProductManagement/ProductManagement";
 
 import KanbanPage from "./pages/KanbanPage";
+import ProductApp from "./ProductList/ProductApp";
 
 
 function App() {
@@ -24,6 +25,11 @@ function App() {
                     path="/kanban"
                     element={<KanbanPage />}
                 />
+
+               <Route
+                    path="/productapp"
+                    element={<ProductApp/>}
+               />
 
                 
 
